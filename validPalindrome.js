@@ -1,17 +1,21 @@
 const palindromeCheck = () => {
 
-    const x = 'aba';
-
-    const arr = x.split('');
-
-    let tempStr = '';
-    for (i = arr.length - 1; i >= 0; i--) {
-        tempStr += arr[i];
-        arr.pop();
-
+    const genericExpression = (changedStr) => {
+        return changedStr.replace(/[^0-9a-zA-Z]/g, '');
     }
 
-    if (x === tempStr) {
+    let originalStr = "0P"
+
+    originalStr = genericExpression(originalStr);
+
+    originalStr = originalStr.toLowerCase();
+
+    let rev = originalStr.split('');
+    rev = rev.reverse();
+    rev = rev.join('');
+
+
+    if (rev === originalStr) {
         console.log(true);
     }
     else {
