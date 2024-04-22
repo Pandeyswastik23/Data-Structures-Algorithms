@@ -1,6 +1,7 @@
 const rotateMatrix = () => {
     let arr = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]];
 
+    // step 1- Find the transpose
     for(let i = 0; i < arr.length; i++){
         for(let j = i+1; j < arr[i].length; j++){
             const temp = arr[i][j];
@@ -8,7 +9,7 @@ const rotateMatrix = () => {
             arr[j][i] = temp;
         }
     }
-    
+    // find the reverse of the transposed matrix
     for(let i = 0; i<arr.length; i++){
 
         let start = 0;
