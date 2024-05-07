@@ -1,5 +1,5 @@
 const Anagaram = () => {
-  let str1 = "listtn";
+  let str1 = "listen";
   let str2 = "silent";
 
   let obj1 = {};
@@ -22,7 +22,7 @@ const Anagaram = () => {
     if (obj2[str2[j]] == undefined) {
       obj2[str2[j]] = 1;
     } else {
-      obj2[str2[j]] = 1;
+      obj2[str2[j]] += 1;
     }
   }
 
