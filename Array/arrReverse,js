@@ -1,0 +1,18 @@
+const arrReverse = (arr) => {
+  let low = 0;
+  let high = arr.length - 1;
+
+  console.log("The original array is: ", arr);
+  while (low < high) {
+    let temp = arr[low];
+    arr[low] = arr[high];
+    arr[high] = temp;
+
+    low++;
+    high--;
+  }
+
+  console.log("The reversed array is: ", arr);
+};
+
+arrReverse([10, 5, 7, 30]);
